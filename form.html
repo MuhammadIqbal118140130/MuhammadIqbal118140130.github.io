@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir - Hayao Miyazaki</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Poppins', sans-serif;
+        }
+        header {
+            background-color: #304B7A;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            z-index: 2; /* Ensuring header stays above background */
+            font-family: 'Poppins', sans-serif;
+        }
+        footer {
+            background-color: #36443b;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            margin-top: auto;
+            z-index: 2; /* Ensuring footer stays above background */
+        }
+        .container {
+            flex: 1;
+            z-index: 2; /* Ensuring content stays above background */
+        }
+        .btn-submit {
+            margin-bottom: 20px;
+        }
+        .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('https://upload.wikimedia.org/wikipedia/en/c/ca/Studio_Ghibli_logo.svg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            opacity: 0.1;
+            z-index: 1; /* Ensuring background stays behind everything */
+        }
+        .header-logo {
+            max-width: 150px; /* Adjust the size as needed */
+            vertical-align: middle; /* Align the logo with the text */
+            margin-left: 10px; /* Space between text and logo */
+        }
+        .form-section {
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="background"></div> <!-- Background SVG -->
+    
+    <header>
+        <div style="display: flex; align-items: center; justify-content: center;">
+            <h1 style="margin: 0;">Formulir Fansite</h1>
+            <img src="http://www.studioghibli.net/images/Studio_Ghiblinet_Logo.jpg" alt="Studio Ghibli Logo" class="header-logo">
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <nav class="col-lg-3 col-md-4 col-sm-12 bg-light p-3">
+                <ul class="nav flex-column">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="form.html">Fansite</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tabel.html">Karya</a></li>
+                </ul>
+            </nav>
+
+            <main class="col-lg-9 col-md-8 col-sm-12">
+                <section class="form-section">
+                    <h2>Formulir Pendaftaran</h2>
+                    <form method="GET" action="submit.html">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Nama Lengkap</label>
+                            <input type="text" class="form-control" id="name" name="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="birthdate" class="form-label">Tanggal Lahir</label>
+                            <input type="date" class="form-control" id="birthdate" name="birthdate" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="gender" class="form-label">Jenis Kelamin</label><br>
+                            <input type="radio" id="male" name="gender" value="Laki-laki" required> Laki-laki<br>
+                            <input type="radio" id="female" name="gender" value="Perempuan" required> Perempuan
+                        </div>
+                        <div class="mb-3">
+                            <label for="interest" class="form-label">Minat Terhadap Karya berikut: </label><br>
+                            <input type="checkbox" name="interest" value="Spirited Away"> Spirited Away<br>
+                            <input type="checkbox" name="interest" value="My Neighbor Totoro"> My Neighbor Totoro<br>
+                            <input type="checkbox" name="interest" value="Howl's Moving Castle"> Howl's Moving Castle
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-submit">Submit</button>
+                    </form>
+                </section>
+            </main>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Hayao Miyazaki Fan Website</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabel - Hayao Miyazaki</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        html, body {
+            height: 100%; /* Mengatur tinggi ke 100% */
+            margin: 0; /* Menghapus margin default */
+            display: flex; /* Menggunakan flexbox */
+            flex-direction: column; /* Menyusun secara vertikal */
+        }
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Poppins', sans-serif;
+        }
+        header {
+            background-color: #304B7A;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+        }
+        .header-logo {
+            max-width: 150px; /* Adjust the size as needed */
+            vertical-align: middle; /* Align the logo with the text */
+            margin-left: 10px; /* Space between text and logo */
+        }
+        footer {
+            background-color: #36443b;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            margin-top: auto; /* Menjaga footer tetap di bawah */
+        }
+        table {
+            width: 100%;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        tr:hover {
+            background-color: #ddd;
+        }
+        thead {
+            position: sticky;
+            top: 0;
+            background-color: #36443b;
+            color: white;
+        }
+        .table-responsive {
+            max-height: 400px;
+            overflow-y: auto;
+        }
+        .container {
+            flex: 1; /* Membiarkan area konten mengisi ruang yang tersisa */
+            padding-top: 20px;
+            flex: 1;
+            z-index: 2; /* Ensuring content stays above background */
+        }
+        .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('https://upload.wikimedia.org/wikipedia/en/c/ca/Studio_Ghibli_logo.svg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            opacity: 0.1;
+            z-index: 1; /* Ensuring background stays behind everything */
+        }
+    </style>
+</head>
+<body>
+    <div class="background"></div> <!-- Background SVG -->
+
+    <header>
+        <div style="display: flex; align-items: center; justify-content: center;">
+            <h1 style="margin: 0;">Karya Produksi Studi Ghibli</h1>
+            <img src="http://www.studioghibli.net/images/Studio_Ghiblinet_Logo.jpg" alt="Studio Ghibli Logo" class="header-logo">
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <nav class="col-lg-3 col-md-4 col-sm-12 bg-light p-3">
+                <ul class="nav flex-column">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="form.html">Fansite</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tabel.html">Karya</a></li>
+                </ul>
+            </nav>
+
+            <main class="col-lg-9 col-md-8 col-sm-12">
+                <section>
+                    <div class="table-responsive">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>No.</th>
+                                    <th>Judul</th>
+                                    <th>Tahun Rilis</th>
+                                    <th>Tipe</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Data dummy -->
+                                <tr>
+                                    <td>1</td>
+                                    <td>Spirited Away</td>
+                                    <td>2001</td>
+                                    <td>Movie</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>My Neighbor Totoro</td>
+                                    <td>1988</td>
+                                    <td>Movie</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Princess Mononoke</td>
+                                    <td>1997</td>
+                                    <td>Movie</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Howl's Moving Castle</td>
+                                    <td>2004</td>
+                                    <td>Movie</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>Ponyo</td>
+                                    <td>2008</td>
+                                    <td>Movie</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>The Cat Returns</td>
+                                    <td>2002</td>
+                                    <td>Movie</td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>When Marnie Was There</td>
+                                    <td>2014</td>
+                                    <td>Movie</td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td>Ghibli Museum Shorts</td>
+                                    <td>2001-2019</td>
+                                    <td>Short Films</td>
+                                </tr>
+                                <tr>
+                                    <td>9</td>
+                                    <td>Earwig and the Witch</td>
+                                    <td>2020</td>
+                                    <td>Movie</td>
+                                </tr>
+                                <tr>
+                                    <td>10</td>
+                                    <td>The Red Turtle</td>
+                                    <td>2016</td>
+                                    <td>Movie</td>
+                                </tr>
+                                <tr>
+                                    <td>11</td>
+                                    <td>Castle in the Sky</td>
+                                    <td>1986</td>
+                                    <td>Movie</td>
+                                </tr>
+                                <tr>
+                                    <td>12</td>
+                                    <td>Nausicaä of the Valley of the Wind</td>
+                                    <td>1984</td>
+                                    <td>Movie</td>
+                                </tr>
+                                <tr>
+                                    <td>13</td>
+                                    <td>Laputa: Castle in the Sky</td>
+                                    <td>1986</td>
+                                    <td>Movie</td>
+                                </tr>
+                                <tr>
+                                    <td>14</td>
+                                    <td>Whisper of the Heart</td>
+                                    <td>1995</td>
+                                    <td>Movie</td>
+                                </tr>
+                                <tr>
+                                    <td>15</td>
+                                    <td>My Neighbors the Yamadas</td>
+                                    <td>1999</td>
+                                    <td>Movie</td>
+                                </tr>
+                                <tr>
+                                    <td>16</td>
+                                    <td>From Up on Poppy Hill</td>
+                                    <td>2011</td>
+                                    <td>Movie</td>
+                                </tr>
+                                <tr>
+                                    <td>17</td>
+                                    <td>The Wind Rises</td>
+                                    <td>2013</td>
+                                    <td>Movie</td>
+                                </tr>
+                                <tr>
+                                    <td>18</td>
+                                    <td>Spirit of the Forest</td>
+                                    <td>2004</td>
+                                    <td>Short Film</td>
+                                </tr>
+                                <tr>
+                                    <td>19</td>
+                                    <td>Tohlot - The Secret of the Forest</td>
+                                    <td>2005</td>
+                                    <td>Short Film</td>
+                                </tr>
+                                <tr>
+                                    <td>20</td>
+                                    <td>Ghibli’s 2020 Short</td>
+                                    <td>2020</td>
+                                    <td>Short Film</td>
+                                </tr>
+                                <tr>
+                                    <td>21</td>
+                                    <td>Ghibli's Earth</td>
+                                    <td>2018</td>
+                                    <td>Short Film</td>
+                                </tr>
+                                <tr>
+                                    <td>22</td>
+                                    <td>Take Me Home, Country Roads</td>
+                                    <td>2018</td>
+                                    <td>Short Film</td>
+                                </tr>
+                                <tr>
+                                    <td>23</td>
+                                    <td>The Boy and the Heron</td>
+                                    <td>2023</td>
+                                    <td>Movie</td>
+                                </tr>
+                                <tr>
+                                    <td>24</td>
+                                    <td>The Tale of the Princess Kaguya</td>
+                                    <td>2013</td>
+                                    <td>Movie</td>
+                                </tr>
+                                <tr>
+                                    <td>25</td>
+                                    <td>Ghibli Park Promotional Shorts</td>
+                                    <td>2022</td>
+                                    <td>Short Films</td>
+                                </tr>
+                                <tr>
+                                    <td>26</td>
+                                    <td>The Secret World of Arrietty</td>
+                                    <td>2010</td>
+                                    <td>Movie</td>
+                                </tr>
+                                <tr>
+                                    <td>27</td>
+                                    <td>Porco Rosso</td>
+                                    <td>1992</td>
+                                    <td>Movie</td>
+                                </tr>
+                                <tr>
+                                    <td>28</td>
+                                    <td>Naoko's World</td>
+                                    <td>2022</td>
+                                    <td>Short Film</td>
+                                </tr>
+                                <tr>
+                                    <td>29</td>
+                                    <td>Ghibli’s 2020 Exhibition</td>
+                                    <td>2020</td>
+                                    <td>Short Film</td>
+                                </tr>
+                                <tr>
+                                    <td>30</td>
+                                    <td>The Day I Became a Flower</td>
+                                    <td>2019</td>
+                                    <td>Short Film</td>
+                                </tr>
+                                <tr>
+                                    <td>31</td>
+                                    <td>Mr. Dough and the Egg Princess</td>
+                                    <td>2010</td>
+                                    <td>Short Film</td>
+                                </tr>
+                                <tr>
+                                    <td>32</td>
+                                    <td>On Your Mark</td>
+                                    <td>1994</td>
+                                    <td>Music Video</td>
+                                </tr>
+                                <tr>
+                                    <td>33</td>
+                                    <td>Chateau in the Sky</td>
+                                    <td>1986</td>
+                                    <td>Movie</td>
+                                </tr>
+                                <tr>
+                                    <td>34</td>
+                                    <td>The Kingdom of Dreams and Madness</td>
+                                    <td>2013</td>
+                                    <td>Documentary</td>
+                                </tr>
+                                <tr>
+                                    <td>35</td>
+                                    <td>The Cat Returns</td>
+                                    <td>2002</td>
+                                    <td>Movie</td>
+                                </tr>
+                                <tr>
+                                    <td>36</td>
+                                    <td>Ghibli Animation: A Personal Journey</td>
+                                    <td>2021</td>
+                                    <td>Documentary</td>
+                                </tr>
+                                <tr>
+                                    <td>37</td>
+                                    <td>Ghibli’s 30th Anniversary Celebration</td>
+                                    <td>2021</td>
+                                    <td>Event Film</td>
+                                </tr>
+                                <tr>
+                                    <td>38</td>
+                                    <td>Whisper of the Heart: The Musical</td>
+                                    <td>2020</td>
+                                    <td>Stage Musical</td>
+                                </tr>
+                                <tr>
+                                    <td>39</td>
+                                    <td>Ghibli Park Promo</td>
+                                    <td>2022</td>
+                                    <td>Short Film</td>
+                                </tr>
+                                <tr>
+                                    <td>40</td>
+                                    <td>Howl's Moving Castle: The Musical</td>
+                                    <td>2021</td>
+                                    <td>Stage Musical</td>
+                                </tr>
+                                <tr>
+                                    <td>41</td>
+                                    <td>The Secret Life of Arrietty</td>
+                                    <td>2010</td>
+                                    <td>Movie</td>
+                                </tr>
+                                <tr>
+                                    <td>42</td>
+                                    <td>Laputa: Castle in the Sky: The Musical</td>
+                                    <td>2019</td>
+                                    <td>Stage Musical</td>
+                                </tr>
+                                <tr>
+                                    <td>43</td>
+                                    <td>Ghibli 35th Anniversary Film Festival</td>
+                                    <td>2023</td>
+                                    <td>Event Film</td>
+                                </tr>
+                                <tr>
+                                    <td>44</td>
+                                    <td>The World of Studio Ghibli</td>
+                                    <td>2021</td>
+                                    <td>Documentary</td>
+                                </tr>
+                                <tr>
+                                    <td>45</td>
+                                    <td>Ghibli's Museum in Mitaka</td>
+                                    <td>2001</td>
+                                    <td>Exhibition</td>
+                                </tr>
+                                <tr>
+                                    <td>46</td>
+                                    <td>The Tale of the Princess Kaguya: The Musical</td>
+                                    <td>2021</td>
+                                    <td>Stage Musical</td>
+                                </tr>
+                                <tr>
+                                    <td>47</td>
+                                    <td>Ghibli Park Opening Ceremony</td>
+                                    <td>2020</td>
+                                    <td>Event Film</td>
+                                </tr>
+                                <tr>
+                                    <td>48</td>
+                                    <td>Spirited Away: The Musical</td>
+                                    <td>2019</td>
+                                    <td>Stage Musical</td>
+                                </tr>
+                                <tr>
+                                    <td>49</td>
+                                    <td>Nausicaä: The Stage Adaptation</td>
+                                    <td>2021</td>
+                                    <td>Stage Play</td>
+                                </tr>
+                                <tr>
+                                    <td>50</td>
+                                    <td>The Wind Rises: The Musical</td>
+                                    <td>2022</td>
+                                    <td>Stage Musical</td>
+                                </tr>
+                                </tr>
+                                <!-- Data Dummy -->
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Hayao Miyazaki Fan Website</p>
+    </footer>
+</body>
+</html>

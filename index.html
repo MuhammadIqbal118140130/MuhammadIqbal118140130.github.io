@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hayao Miyazaki - Studio Ghibli</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Poppins', sans-serif;
+        }
+        header {
+            background-color: #304B7A;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+        }
+        .container {
+            flex: 1;
+            z-index: 2;
+        }
+        footer {
+            background-color: #36443b;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            margin-top: auto;
+            z-index: 2;
+        }
+        .content-section {
+            padding: 20px;
+            text-align: justify;
+        }
+        .bio-image {
+            max-width: 150px;
+            margin-right: 20px;
+        }
+        .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('https://upload.wikimedia.org/wikipedia/en/c/ca/Studio_Ghibli_logo.svg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            opacity: 0.05;
+            z-index: -1;
+        }
+        .header-logo {
+            max-width: 150px; /* Adjust the size as needed */
+            vertical-align: middle; /* Align the logo with the text */
+            margin-left: 10px; /* Space between text and logo */
+        }
+        .row {
+            margin-bottom: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="background"></div> <!-- Background SVG -->
+    
+    <header>
+        <div style="display: flex; align-items: center; justify-content: center;">
+            <h1 style="margin: 0;">Hayao Miyazaki - Studio Ghibli</h1>
+            <img src="http://www.studioghibli.net/images/Studio_Ghiblinet_Logo.jpg" alt="Studio Ghibli Logo" class="header-logo">
+        </div>
+    </header>
+
+    <div class="container flex-grow-1">
+        <div class="row">
+            <nav class="col-lg-3 col-md-4 col-sm-12 bg-light p-3">
+                <ul class="nav flex-column">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="form.html">Fansite</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tabel.html">Karya</a></li>
+                </ul>
+            </nav>
+
+            <main class="col-lg-9 col-md-8 col-sm-12">
+                <!-- Biografi Hayao Miyazaki -->
+                <section class="content-section">
+                    <h2><b>Biografi Hayao Miyazaki</b></h2>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e2/Hayao_Miyazaki_cropped_1_Hayao_Miyazaki_201211.jpg" alt="Hayao Miyazaki" class="img-fluid bio-image">
+                        </div>
+                        <div class="col-md-8" >
+                            <p>Hayao Miyazaki adalah seorang sutradara, animator, dan penulis skenario Jepang yang terkenal. Lahir pada tanggal 5 Januari 1941, ia menjadi salah satu pembuat film animasi paling berpengaruh dalam sejarah. Miyazaki dikenal karena karya-karyanya yang penuh imajinasi dan karakter yang mendalam, seperti <i>Spirited Away</i>, <i>My Neighbor Totoro</i>, dan <i>Princess Mononoke</i>. Dia juga merupakan pendiri Studio Ghibli, sebuah studio animasi terkenal yang telah menghasilkan beberapa film animasi klasik yang dicintai oleh penggemar di seluruh dunia.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Bagian Studio Ghibli -->
+                <section class="content-section">
+                    <h2><b>Studio Ghibli</b></h2>
+                    <div class="row">
+                        <div class="col-md-8">
+                            <p>Studio Ghibli didirikan pada tahun 1985 oleh Hayao Miyazaki dan Isao Takahata setelah kesuksesan besar film <i>Nausicaä of the Valley of the Wind</i> pada tahun 1984. Studio ini dikenal karena pendekatannya yang unik dalam menghasilkan film animasi dengan cerita yang mendalam, desain karakter yang indah, dan pemandangan yang memukau. Selama bertahun-tahun, Studio Ghibli telah menjadi ikon dalam dunia animasi dengan menghasilkan film-film legendaris seperti <i>My Neighbor Totoro</i>, <i>Spirited Away</i>, dan <i>Howl's Moving Castle</i>.</p>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="http://www.studioghibli.net/images/Studio_Ghiblinet_Logo.jpg" alt="Studio Ghibli Logo" class="img-fluid bio-image">
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Hayao Miyazaki Fan Website</p>
+    </footer>
+</body>
+</html>
